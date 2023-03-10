@@ -25,17 +25,17 @@ const Content = () => {
 
   // sunday0 monday1 tuesday2 wednesday3 thursday4 friday5 saturday6
   switch (dayOfWeek) {
-    case 1 || 4:
+    case dayOfWeek == 1 || 4:
       matIndex = 0;
       break;
-    case 2 || 5:
+    case dayOfWeek == 2 || 5:
       matIndex = 1;
       break;
-    case 3 || 6:
+    case dayOfWeek == 3 || 6:
       matIndex = 2;
       break;
     default:
-      matIndex = 4;
+      matIndex = 3;
       break;
   }
 
