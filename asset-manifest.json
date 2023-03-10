@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/genshin-tracker-react/static/css/main.ffcd7955.css",
-    "main.js": "/genshin-tracker-react/static/js/main.f619892d.js",
+    "main.js": "/genshin-tracker-react/static/js/main.5b3fdb64.js",
     "static/js/631.56ae8b7f.chunk.js": "/genshin-tracker-react/static/js/631.56ae8b7f.chunk.js",
     "static/media/Cryo.svg": "/genshin-tracker-react/static/media/Cryo.4b1ac1e25c5c2ab86d12698ead16f940.svg",
     "static/media/Dendro.svg": "/genshin-tracker-react/static/media/Dendro.1b0965fe1b2f1889844dd20671e00efc.svg",
@@ -12,11 +12,11 @@
     "static/media/Electro.svg": "/genshin-tracker-react/static/media/Electro.e2cba9082f525f726b3ca43cc46b2c0b.svg",
     "index.html": "/genshin-tracker-react/index.html",
     "main.ffcd7955.css.map": "/genshin-tracker-react/static/css/main.ffcd7955.css.map",
-    "main.f619892d.js.map": "/genshin-tracker-react/static/js/main.f619892d.js.map",
+    "main.5b3fdb64.js.map": "/genshin-tracker-react/static/js/main.5b3fdb64.js.map",
     "631.56ae8b7f.chunk.js.map": "/genshin-tracker-react/static/js/631.56ae8b7f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffcd7955.css",
-    "static/js/main.f619892d.js"
+    "static/js/main.5b3fdb64.js"
   ]
 }
