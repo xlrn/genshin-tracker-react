@@ -3,6 +3,12 @@ import DomainCell from "./table/domainCell";
 import MaterialCell from "./table/materialCell";
 import UsersCell from "./table/usersCell";
 
+import {
+  mondstadtMonThurs,
+  mondstadtTuesFri,
+  mondstadtWedSat,
+} from "../data/weapons";
+
 const Content = () => {
   const today = new Date();
   const dayOfWeek = today.getDay();
@@ -18,26 +24,38 @@ const Content = () => {
   const liyueMats = ["Stick", "Ball", "Puzzle Piece", "All"];
   const inazumaMats = ["Coral", "Magatama", "Oni Skull", "All"];
   const sumeruMats = ["Talisman", "Plate", "Beetle", "All"];
+  const allWeapons = ["All Weapons"];
 
   const dummy = ["I'll figure this out later"];
 
   let matIndex = 0;
+  let mondstadtWeapons;
 
   // sunday0 monday1 tuesday2 wednesday3 thursday4 friday5 saturday6
   switch (dayOfWeek) {
-    case dayOfWeek == 1 || 4:
+    case 1:
+    case 4:
       matIndex = 0;
+      mondstadtWeapons = mondstadtMonThurs;
       break;
-    case dayOfWeek == 2 || 5:
+    case 2:
+    case 5:
       matIndex = 1;
+      mondstadtWeapons = mondstadtTuesFri;
       break;
-    case dayOfWeek == 3 || 6:
+    case 3:
+    case 6:
       matIndex = 2;
+      mondstadtWeapons = mondstadtWedSat;
       break;
     default:
       matIndex = 3;
+      mondstadtWeapons = allWeapons;
       break;
   }
+
+  console.log(dayOfWeek);
+  console.log(matIndex);
 
   return (
     <div className="text-white py-4 my-8 px-4 w-4/6 bg-sky-900">
@@ -45,7 +63,7 @@ const Content = () => {
         {/* Mondstadt*/}
         <DomainCell name={domains[0]} />
         <MaterialCell name={mondstadtMats[matIndex]} />
-        <UsersCell users={dummy} />
+        <UsersCell users={mondstadtWeapons} />
         {/* Liyue */}
         <DomainCell name={domains[1]} />
         <MaterialCell name={liyueMats[matIndex]} />

@@ -5,9 +5,11 @@ interface Users {
 }
 
 const UsersCell = (props: Users) => {
+  const userString = props.users.join(", ");
+
   return (
     <div className="col-span-2 bg-slate-800">
-      <div className="px-3 py-2">{props.users}</div>
+      <div className="px-3 py-2">{userString}</div>
     </div>
   );
 };
