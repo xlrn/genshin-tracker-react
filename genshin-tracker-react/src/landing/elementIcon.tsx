@@ -19,7 +19,7 @@ const ElementIcon = () => {
   return (
     <>
       <div className="bg-fixed">
-        <img className="opacity-70" src={selectedElement}></img>
+        <img className="opacity-70" src={selectedElement} alt=""></img>
       </div>
     </>
   );
