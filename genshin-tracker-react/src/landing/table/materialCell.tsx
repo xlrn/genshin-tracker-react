@@ -6,7 +6,7 @@ interface Material {
 
 const MaterialCell = (props: Material) => {
   return (
-    <div className="col-span-2 bg-slate-800">
+    <div className="col-span-1 bg-slate-800">
       <div className="px-3 py-2">{props.name}</div>
     </div>
   );

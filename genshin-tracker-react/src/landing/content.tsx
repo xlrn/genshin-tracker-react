@@ -35,8 +35,6 @@ const Content = () => {
   const sumeruMats = ["Talisman", "Plate", "Beetle", "All"];
   const allWeapons = ["All Weapons"];
 
-  const dummy = ["I'll figure this out later"];
-
   let matIndex = 0;
   let mondstadtWeapons: string[],
     liyueWeapons: string[],
@@ -79,7 +77,7 @@ const Content = () => {
   }
 
   return (
-    <div className="text-white py-4 my-8 px-4 w-4/6 bg-sky-900">
+    <div className="text-white py-4 my-8 px-4 w-4/6 bg-sky-900 min-w-[900px]">
       <div className="grid grid-cols-5 gap-2">
         {/* Mondstadt*/}
         <DomainCell name={domains[0]} />
